@@ -125,7 +125,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
                   className={cn(
                     'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors',
                     locale === 'zh-CN' &&
-                      'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
+                      'bg-[#68A89D] dark:bg-[#C4E0DC]/20 text-[#68A89D] dark:text-[#68A89D]',
                   )}
                 >
                   简体中文
@@ -138,7 +138,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
                   className={cn(
                     'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors',
                     locale === 'en-US' &&
-                      'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
+                      'bg-[#68A89D] dark:bg-[#C4E0DC]/20 text-[#68A89D] dark:text-[#68A89D]',
                   )}
                 >
                   English
@@ -172,7 +172,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
                   className={cn(
                     'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
                     theme === 'light' &&
-                      'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
+                      'bg-[#68A89D] dark:bg-[#C4E0DC]/20 text-[#68A89D] dark:text-[#68A89D]',
                   )}
                 >
                   <Sun className="w-4 h-4" />
@@ -186,7 +186,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
                   className={cn(
                     'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
                     theme === 'dark' &&
-                      'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
+                      'bg-[#68A89D] dark:bg-[#C4E0DC]/20 text-[#68A89D] dark:text-[#68A89D]',
                   )}
                 >
                   <Moon className="w-4 h-4" />
@@ -200,7 +200,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
                   className={cn(
                     'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2',
                     theme === 'system' &&
-                      'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
+                      'bg-[#68A89D] dark:bg-[#C4E0DC]/20 text-[#68A89D] dark:text-[#68A89D]',
                   )}
                 >
                   <Monitor className="w-4 h-4" />
@@ -226,10 +226,10 @@ export function Header({ currentSceneTitle }: HeaderProps) {
             {needsSetup && (
               <>
                 <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
-                  <span className="animate-setup-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-violet-500" />
+                  <span className="animate-setup-ping absolute inline-flex h-full w-full rounded-full bg-[#00726D] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00726D]" />
                 </span>
-                <span className="animate-setup-float absolute top-full mt-2 right-0 whitespace-nowrap text-[11px] font-medium text-violet-600 dark:text-violet-400 bg-violet-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-800/50 px-2 py-0.5 rounded-full shadow-sm pointer-events-none">
+                <span className="animate-setup-float absolute top-full mt-2 right-0 whitespace-nowrap text-[11px] font-medium text-[#00726D] dark:text-[#00726D] bg-[#00726D] dark:bg-[#00726D]/10 border border-[#68A89D] dark:border-[#00726D]/50 px-2 py-0.5 rounded-full shadow-sm pointer-events-none">
                   {t('settings.setupNeeded')}
                 </span>
               </>
